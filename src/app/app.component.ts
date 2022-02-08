@@ -36,7 +36,9 @@ export class AppComponent {
   }
 
   setDecimales(decimales: number): void {
-    if (this.decimales >= 0 && this.decimales <= 10) {
+    if (decimales === -1 && this.decimales !== 0) {
+      this.decimales += decimales;
+    } else if (decimales === 1 && this.decimales !== 10) {
       this.decimales += decimales;
     }
   }
