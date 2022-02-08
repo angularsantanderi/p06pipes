@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'p06pipes';
+  texto: string = 'ciudad de Madrid';
+  id: any = 1;
 }
